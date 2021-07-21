@@ -13,7 +13,7 @@
         <h2 class="logo__book">Bookshelf</h2>
         <div class="container__input__search">
           <input type="text" class="search__book" placeholder="Search Book" id="search-book" />
-          <button class="search__button" id="search-button">
+          <button class="search__button" id="search-button" type="submit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -36,30 +36,32 @@
       <article>
         <section id="add-new-book" class="container__new__book">
           <h3>Add New Book</h3>
-          <div class="wrapper__input">
-            <label for="title">Title</label>
-            <input type="text" placeholder="Dicoding Book" />
-          </div>
-          <div class="wrapper__input">
-            <label for="author">Author</label>
-            <input type="text" placeholder="Dicoding" />
-          </div>
-          <div class="wrapper__input">
-            <label for="year">Year</label>
-            <input type="text" placeholder="2021" />
-          </div>
-          <div class="wrapper__checkbox">
-            <input type="checkbox" />
-            <label for="year">Complete</label>
-          </div>
-          <button type="submit" class="submit__button" id="submit-button">Submit Book</button>
+          <form class="form" action="#" id="form">
+            <div class="wrapper__input">
+              <label for="title">Title</label>
+              <input type="text" placeholder="Dicoding Book" id="input-title" />
+            </div>
+            <div class="wrapper__input">
+              <label for="author">Author</label>
+              <input type="text" placeholder="Dicoding" id="input-author" />
+            </div>
+            <div class="wrapper__input">
+              <label for="year">Year</label>
+              <input type="number" placeholder="2021" id="input-year" />
+            </div>
+            <div class="wrapper__checkbox">
+              <input type="checkbox" id="input-isComplete" />
+              <label for="year">Complete</label>
+            </div>
+            <button type="submit" class="submit__button" id="submit-button">Submit Book</button>
+          </form>
         </section>
         <section id="reading-list" class="container__reading__list">
           <h3>Reading List</h3>
-          <ul class="wrapper__reading__list" id="wrapper-list-reading">
-            <li class="wrapper__reading">
-              <div class="wrapper__reading__p">
-                <p>Learn Data Structure and Algorithms</p>
+          <ul class="wrapper__reading__list" id="list-reading-book">
+            <!-- <li class="wrapper__book">
+              <div class="wrapper__book__p">
+                <h4>Learn Data Structure and Algorithms</h4>
                 <p>Muchlis Harly Winata</p>
                 <p>2021</p>
               </div>
@@ -77,35 +79,14 @@
                 id="img-button"
                 class="trash-button"
               />
-            </li>
-            <li class="wrapper__reading">
-              <div class="wrapper__reading__p">
-                <p>Learn Data Structure and Algorithms</p>
-                <p>Muchlis Harly Winata</p>
-                <p>2021</p>
-              </div>
-              <img
-                src="https://s2.svgbox.net/hero-outline.svg?ic=check&color=2570fa"
-                width="32"
-                height="32"
-                id="img-button"
-                class="check-button"
-              />
-              <img
-                src="https://s2.svgbox.net/hero-outline.svg?ic=trash&color=2570fa"
-                width="32"
-                height="32"
-                id="img-button"
-                class="trash-button"
-              />
-            </li>
+            </li> -->
           </ul>
         </section>
         <section id="finished-book" class="container__finished__list">
           <h3>Finished Books</h3>
-          <ul class="wrapper__finished__book" id="wrapper-list-finished">
-            <li class="wrapper__finished__book__list">
-              <div class="wrapper__finished__book__p">
+          <ul class="wrapper__finished__book" id="list-finished-book">
+            <!-- <li class="wrapper__book">
+              <div class="wrapper__book__p">
                 <p>Learn Data Structure and Algorithms</p>
                 <p>Muchlis Harly Winata</p>
                 <p>2021</p>
@@ -114,7 +95,7 @@
                 src="https://s2.svgbox.net/hero-outline.svg?ic=book-open&color=2570fa"
                 width="32"
                 height="32"
-                class="unread-button"
+                class="book-open-button"
               />
               <img
                 src="https://s2.svgbox.net/hero-outline.svg?ic=trash&color=2570fa"
@@ -123,27 +104,7 @@
                 id="img-button"
                 class="trash-button"
               />
-            </li>
-            <li class="wrapper__finished__book__list">
-              <div class="wrapper__finished__book__p">
-                <p>Learn Data Structure and Algorithms</p>
-                <p>Muchlis Harly Winata</p>
-                <p>2021</p>
-              </div>
-              <img
-                src="https://s2.svgbox.net/hero-outline.svg?ic=book-open&color=2570fa"
-                width="32"
-                height="32"
-                class="unread-button"
-              />
-              <img
-                src="https://s2.svgbox.net/hero-outline.svg?ic=trash&color=2570fa"
-                width="32"
-                height="32"
-                id="img-button"
-                class="trash-button"
-              />
-            </li>
+            </li> -->
           </ul>
         </section>
       </article>

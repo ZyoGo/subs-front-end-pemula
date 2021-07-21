@@ -144,7 +144,7 @@ header {
   margin-bottom: 2.5rem;
 }
 
-.wrapper__reading {
+.wrapper__book {
   display: flex;
   border: 2px solid #96baff;
   padding: 1rem 1.5rem;
@@ -154,7 +154,7 @@ header {
   /* justify-content: space-between; */
 }
 
-.wrapper__reading__p p {
+.wrapper__book__p p {
   margin: 0.3rem 0;
 }
 
@@ -174,17 +174,7 @@ header {
   margin-bottom: 2.5rem;
 }
 
-.wrapper__finished__book__list {
-  display: flex;
-  border: 2px solid #96baff;
-  padding: 1rem 1.5rem;
-  border-radius: 14px;
-  align-items: center;
-  margin: 1.5rem 0;
-  /* justify-content: space-between; */
-}
-
-.wrapper__finished__book__p p {
+.wrapper__book__book__p p {
   margin: 0.3rem 0;
 }
 
@@ -192,7 +182,7 @@ header {
   margin-left: auto;
 }
 
-.unread-button {
+.book-open-button {
   margin-left: auto;
 }
 
